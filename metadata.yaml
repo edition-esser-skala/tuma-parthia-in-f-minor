@@ -1,0 +1,16 @@
+composer:
+  last: Tůma
+  first: František Ignác Antonín
+title: Parthia in F minor
+genre: instrumental
+scoring: 2 vl, b
+license: cc-by-sa-4.0
+sources:
+  B1:
+    siglum: S-L
+    shelfmark: Saml.Engelhart 492
+    rism: 190003396
+    url: https://www.alvin-portal.org/alvin/view.jsf?pid=alvin-record:332665
+    license: public domain
+    principal: true
+imslp:
