@@ -8,7 +8,7 @@
   \bookpart {
     \section "1" "Introduzzione"
     \addTocEntry
-    \paper { indent = 2\cm }
+    \paper { indent = 2\cm page-count = #2 }
     \score {
       <<
         \new Staff {
