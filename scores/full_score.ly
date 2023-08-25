@@ -3,12 +3,12 @@
 \include "../definitions.ly"
 \include "score_settings/full-score.ly"
 
-% \paper { systems-per-page = #4 }
+\paper { systems-per-page = #4 }
 
 \book {
   \bookpart {
     \section "1" "Introduzzione"
-    % \addTocEntry
+    \addTocEntry
     \paper { indent = 2\cm }
     \score { %\articulate
       <<
@@ -32,13 +32,14 @@
         >>
         \new FiguredBass { \IntroBassFigures }
       >>
-      \layout { }
-      % \midi { \tempo 4 = 120 }
+      \layout { \override Score.SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/8) }
+      \midi { \tempo 4 = 55 } %110
     }
   }
   \bookpart {
     \section "2" "Menuet"
-    % \addTocEntry
+    \addTocEntry
+    \paper { page-count = #2 }
     \score { %\articulate
       <<
         \new StaffGroup <<
@@ -62,12 +63,13 @@
         \new FiguredBass { \MenuetBassFigures }
       >>
       \layout { }
-      % \midi { \tempo 4 = 72 }
+      \midi { \tempo 2. = 60 }
     }
   }
   \bookpart {
     \section "3" "Capricio"
-    % \addTocEntry
+    \addTocEntry
+    \paper { page-count = #2 }
     \score { %\articulate
       <<
         \new StaffGroup <<
@@ -91,7 +93,7 @@
         \new FiguredBass { \CapricioBassFigures }
       >>
       \layout { }
-      % \midi { \tempo 2. = 60 }
+      \midi { \tempo 2 = 120 }
     }
   }
 }
